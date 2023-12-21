@@ -84,8 +84,8 @@ body {
 
   
   .table-container {
-    background-color: #68675d;
-    color: white;
+    background-color: #ce7924;
+    color: rgb(0, 0, 0);
     width: 35%;
   }
   
@@ -102,12 +102,12 @@ body {
   }
   
   .beautiful-table th {
-    background-color: #994d00; /* Dark gray background */
-    color: #fff;
+    background-color: #ffffff; /* Dark gray background */
+    color: #020000;
   }
   
   .beautiful-table tr:nth-child(even) {
-    background-color: #994d00; /* Medium gray background */
+    background-color: #ffffff; /* Medium gray background */
   }
   
   /* Media Queries for Responsive Design */
