@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dextrology - Explore Your Numerical Destiny</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator-container">
+        <div class="title">Dextrology</div>
+
+        <div class="form-container">
+          <label for="name">Enter your name:</label>
+          <input type="text" id="name" placeholder="e.g., John Doe" />
+
+          <label for="dobDay">Day of Birth:</label>
+          <input type="number" id="dobDay" placeholder="Day" min="1" max="31" />
+
+          <label for="dobMonth">Month of Birth:</label>
+          <input
+            type="number"
+            id="dobMonth"
+            placeholder="Month"
+            min="1"
+            max="12"
+          />
+
+          <label for="dobYear">Year of Birth:</label>
+          <input type="number" id="dobYear" placeholder="Year" />
+
+          <button onclick="calculateNumerology()">Calculate</button>
+
+          <div id="chaldeanResult" class="result"></div>
+          <div id="pythagoreanResult" class="result"></div>
+          <div id="dobResult" class="result"></div>
+        </div>
+      </div>
+
+      <div class="table-container">
+        <table class="beautiful-table">
+          <tr>
+            <th>Planet Number</th>
+            <th>Planet Name</th>
+            <th>Friendly Planets</th>
+            <th>Enemy Planets</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>SUN (Surya)</td>
+            <td>1, 2, 3, 4, 5, 7, 9
+            </td>
+            <td>6,8</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>MOON (Chandra)</td>
+            <td>1, 2, 3, 4, 7, 8, 9
+            </td>
+            <td>5, 6
+            </td>
+          </tr>
+          <td>3</td>
+            <td>JUPITER (Brihaspati)</td>
+            <td>1, 2, 3, 5, 6, 8, 9
+            </td>
+            <td>4,7
+            </td>
+          </tr>
+          <td>4</td>
+            <td>URANUS (Rahu)</td>
+            <td>1, 2, 5, 7, 9</td>
+            <td>3, 4, 6, 8
+            </td>
+          </tr>
+          <td>5</td>
+            <td>MERCURY (Budh)</td>
+            <td>1, 3, 4, 5, 6, 7, 8, 9
+            </td>
+            <td>2</td>
+          </tr>
+          <td>6</td>
+            <td>VENUS (Shukra)</td>
+            <td>3, 5, 8, 9
+            </td>
+            <td>1, 2, 4, 6, 7
+            </td>
+          </tr>
+          <td>7</td>
+            <td>NEPTUNE (Ketu)</td>
+            <td>1, 2, 4, 5
+            </td>
+            <td>3, 6, 7, 8, 9
+            </td>
+          </tr>
+          <td>8</td>
+            <td>SATURN (Shani)</td>
+            <td>2, 3, 5, 6
+            </td>
+            <td>1, 4, 7, 8, 9
+            </td>
+          </tr>
+          <!-- Add more rows as needed -->
+          <!-- ... -->
+          <tr>
+            <td>9</td>
+            <td>MARS (Mangal)</td>
+            <td>1, 2, 3, 4, 5, 6
+            </td>
+            <td>7,8,9
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td>1/1, 2/2, 3/3, 5/5
+
+            </td>
+            <td>4/4, 6/6, 7/7, 8/8, 9/9
+
+            </td>
+          </tr>
+          <tr>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <script src="calculator.js"></script>
+  </body>
+</html>

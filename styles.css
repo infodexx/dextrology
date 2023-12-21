@@ -1,0 +1,122 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2; /* Light gray background */
+    color: #333;
+    margin-top: 50px;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+  }
+  
+  .calculator-container {
+    background-color: #444; /* Dark gray background */
+    color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 60%;
+  }
+  
+  .title {
+    background-color: #cc6600; /* Dark orange color */
+    color: #fff;
+    padding: 20px;
+    font-size: 2em;
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+  }
+  
+  .form-container {
+    padding: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.2em;
+    color: #ccc; /* Light gray text */
+  }
+  
+  input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+  }
+  
+  button {
+    background-color: #cc6600; /* Dark orange color */
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2em;
+  }
+  
+  button:hover {
+    background-color: #994d00; /* Darker shade of orange */
+  }
+  
+  .result {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.4em;
+    background-color: #555; /* Dark gray background */
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+
+  
+  .table-container {
+    width: 35%;
+  }
+  
+  .beautiful-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .beautiful-table th, .beautiful-table td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .beautiful-table th {
+    background-color: #444; /* Dark gray background */
+    color: #fff;
+  }
+  
+  .beautiful-table tr:nth-child(even) {
+    background-color: #666; /* Medium gray background */
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media only screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .calculator-container, .table-container {
+      width: 100%;
+    }
+  }
+  
